@@ -1,4 +1,4 @@
-import { Wheel } from './main';
+import Wheel from './components/wheel';
 
 export default class Vehicle {
   private numberOfWheels: number; // bigger than -1
