@@ -7,8 +7,4 @@ export default class Car extends Vehicle {
       this.wheels[i].rpm = 5;
     }
   }
-
-  public isRoadEmpty(vehicles: Vehicle[]) {
-    return vehicles.length === 0;
-  }
 }
