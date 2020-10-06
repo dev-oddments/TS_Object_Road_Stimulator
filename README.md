@@ -2,24 +2,27 @@
 
 ## **> 해결 과정**
 
-#### 1) .gitignore 추가 - [320fcc6](https://github.com/dididy/class101-quiz/commit/320fcc67cfb6a34053c48cb20c1398cad5a8e7d8)
+#### 1) .gitignore 추가 - [1b28660](https://github.com/dididy/class101-quiz/commit/1b2866054a99d57da392abedec1c09b6d9bf7f0b)
 
-#### 2) eslint, jest, package.json 설정 - [1b28660](https://github.com/dididy/class101-quiz/commit/1b2866054a99d57da392abedec1c09b6d9bf7f0b)
+#### 2) eslint, jest, package.json 설정 - [12796cc](https://github.com/dididy/class101-quiz/commit/12796cc6229232a00c082e8c2d2008944f77090d)
 
-- eslint는 airbnb 컨벤션으로 설정
-- 테스트코드를 jest기반으로 작성하기 위한 환경 설정
+- eslint는 airbnb 컨벤션으로 설정했다.
+- 테스트코드를 jest기반으로 작성하기 위한 환경을 설정했다.
 
-#### 3) 당장 해결할 수 있는 lint error 해결 - [12796cc](https://github.com/dididy/class101-quiz/commit/12796cc6229232a00c082e8c2d2008944f77090d)
+#### 3) 당장 해결할 수 있는 lint error 해결 - [55ecece](https://github.com/dididy/TS_Object_Road_Stimulator/commit/55ecece2990a71cb21889477c5e7028d6bda68db)
 
-#### 4) main.ts 내의 클래스들을 파일 단위로 분리 - [12796cc](https://github.com/dididy/class101-quiz/commit/12796cc6229232a00c082e8c2d2008944f77090d)
+#### 4) main.ts 내의 클래스들을 파일 단위로 분리 - [3dcfe32](https://github.com/dididy/class101-quiz/commit/3dcfe32bfc108f07ec6940a9e3f733615dc4f034)
 
-#### 5) 구조적으로 적절할 수 있도록 Road 클래스 생성 및 정리 - [3dcfe32](https://github.com/dididy/class101-quiz/commit/3dcfe32bfc108f07ec6940a9e3f733615dc4f034)
+#### 5) 구조적으로 적절한 Road 클래스 생성 및 정리 - [44a2352](https://github.com/dididy/class101-quiz/commit/44a2352f33e730aa46720c99d7ca61f10ccca597)
 
-#### 5) 앞서 해결못한 lint 에러 해결 및 적절하게 코드 리팩토링 - [44a2352](https://github.com/dididy/class101-quiz/commit/44a2352f33e730aa46720c99d7ca61f10ccca597)
+#### 5) 앞서 해결못한 lint 에러 해결 및 코드 리팩토링 - [ceb88e9](https://github.com/dididy/class101-quiz/commit/ceb88e9b06855bf0d2aede115d024099086452fc)
 
-#### 6) jest를 활용한 테스트코드  추가 - [ceb88e9](https://github.com/dididy/class101-quiz/commit/ceb88e9b06855bf0d2aede115d024099086452fc)
+- wheel.js 파일명의 첫글자를 대문자로 변경하려 했으나 git이 대소문자 변경의 tracking을 못하는 문제가 있어 `git config core.ignorecase false` 를 사용하려 해결하려 했지만 실패했다. 기존 파일이 스테이지에 올라가있는 상태에서 파일명의 대소문자만 변경할 경우 tracking이 되긴 하지만 새로운 파일로 간주해버리게 된다. 따라서 문제를 해결하기 위해서는 `git mv wheel.js Wheel.js` 와 같이 `git mv` 를 사용하여 파일명을 변경하면 된다. 
+  - git에서 이런 문제가 발생하는 이유는 git이 운영체제 파일 시스템을 따라서인데 Windows나 Mac OS의 파일시스템에서 대소문자가 달라도 같은 파일로 인식하기 때문이다. 
 
-- TypeScript에서 `describe-context-it` 중 `context` 를 사용하려면 `jest-plugin-context` 가 필요하며, JavaScript와 다르게 추가적으로`@types/jest-plugin-context` 를 사용하여야 함
+#### 6) jest기반의 테스트코드 추가 - [fe36021](https://github.com/dididy/class101-quiz/commit/fe360215af2d9ba6356532995463fbb114369bc9)
+
+- TypeScript에서 `describe-context-it` 중 `context` 를 사용하려면 `jest-plugin-context` 가 필요하며, TypeScript의 경우 추가적으로`@types/jest-plugin-context` 를 설정해줘야 한다.
 
 ## **> 요구사항**
 
